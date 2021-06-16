@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fonts/frank/FrankRuhlLibre-Light.eot');
+    src: local('Frank Ruhl Libre Light'), local('FrankRuhlLibre-Light'),
+        url('../fonts/frank/FrankRuhlLibre-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/frank/FrankRuhlLibre-Light.woff2') format('woff2'),
+        url('../fonts/frank/FrankRuhlLibre-Light.woff') format('woff'),
+        url('../fonts/frank/FrankRuhlLibre-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fonts/frank/FrankRuhlLibre-Bold.eot');
+    src: local('Frank Ruhl Libre Bold'), local('FrankRuhlLibre-Bold'),
+        url('../fonts/frank/FrankRuhlLibre-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/frank/FrankRuhlLibre-Bold.woff2') format('woff2'),
+        url('../fonts/frank/FrankRuhlLibre-Bold.woff') format('woff'),
+        url('../fonts/frank/FrankRuhlLibre-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fonts/frank/FrankRuhlLibre-Medium.eot');
+    src: local('Frank Ruhl Libre Medium'), local('FrankRuhlLibre-Medium'),
+        url('../fonts/frank/FrankRuhlLibre-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/frank/FrankRuhlLibre-Medium.woff2') format('woff2'),
+        url('../fonts/frank/FrankRuhlLibre-Medium.woff') format('woff'),
+        url('../fonts/frank/FrankRuhlLibre-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fonts/frank/FrankRuhlLibre-Black.eot');
+    src: local('Frank Ruhl Libre Black'), local('FrankRuhlLibre-Black'),
+        url('../fonts/frank/FrankRuhlLibre-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/frank/FrankRuhlLibre-Black.woff2') format('woff2'),
+        url('../fonts/frank/FrankRuhlLibre-Black.woff') format('woff'),
+        url('../fonts/frank/FrankRuhlLibre-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fonts/frank/FrankRuhlLibre-Regular.eot');
+    src: local('Frank Ruhl Libre Regular'), local('FrankRuhlLibre-Regular'),
+        url('../fonts/frank/FrankRuhlLibre-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/frank/FrankRuhlLibre-Regular.woff2') format('woff2'),
+        url('../fonts/frank/FrankRuhlLibre-Regular.woff') format('woff'),
+        url('../fonts/frank/FrankRuhlLibre-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" media="all" href="./css/fonts.css">
+    <link rel="stylesheet" media="all" href="./css/main.min.css">
+    <link rel="stylesheet" media="all" href="./libs/slick.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__container">
+                <div class="header-logo">
+                    <a href="#" class="home-link" title="home-page">
+                        <img src="./img/logo-main-1.svg" alt="Home logo">
+                    </a>
+                    <a href="#" class="home-link home-link--scroll" title="home-page">
+                        <img src="./img/logo-main-2.svg" alt="Home logo">
+                    </a>
+                </div>
+                <div class="header-top__control">
+                    <div class="header__lang">
+                        <span>עב</span>
+                        <ul>
+                            <li><a href="#">עברית</a></li>
+                            <li><a href="#">english</a></li>
+                            <li><a href="#">français</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="header__search desk-only">
+                        <a href="#" class="header__search-btn">
+                            <img src="./img/search-icon.svg" alt="">
+                        </a>
+                        <input type="search" placeholder="מה תרצו לחפש?">
+
+
+                    </div>
+                    <button class="light-plugin mob-only">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.4881 15.5119L24 12L20.4881 8.48806V3.51194H15.5119L12 0L8.48806 3.51194H3.51194V8.48806L0 12L3.51194 15.5119V20.4881H8.48806L12 24L15.5119 20.4881H20.4881V15.5119ZM12 18.366V5.63395C15.5119 5.63395 18.366 8.48806 18.366 12C18.366 15.5119 15.5119 18.366 12 18.366Z"
+                            />
+                        </svg>
+
+                    </button>
+                    <button class="burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="header-menu__bg">
+            <img src="./img/bg-menu.png" alt="">
+            <div class="container">
+                <div class="bg-lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header-menu__container">
+            <div class="container">
+                <div class="header-menu__content">
+
+                    <div class="menu-list">
+                        <div class="menu-list__go-back-mob">
+                            <svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M-1.3552e-06 6.68421L6.31579 13L6.31579 8.26316L30 8.26316L30 5.10526L6.31579 5.10526L6.31579 0.368419L-1.3552e-06 6.68421Z"
+                                />
+                            </svg>חזרה
+                        </div>
+                        <ul>
+                            <li><a href="#">אודות</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="#">תחומי פעילות<svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M-1.3552e-06 6.68421L6.31579 13L6.31579 8.26316L30 8.26316L30 5.10526L6.31579 5.10526L6.31579 0.368419L-1.3552e-06 6.68421Z"
+                                    />
+                                </svg></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">נדל״ן</a></li>
+                                    <li><a href="#">מימון פרויקטים</a></li>
+                                    <li><a href="#">התחדשות עירונית</a></li>
+                                    <li><a href="#">משפט תאגידי</a></li>
+                                    <li><a href="#">משפט מסחרי</a></li>
+                                    <li><a href="#">ליטיגציה ויישוב סכסוכים</a></li>
+                                    <li><a href="#">פעילות בינלאומית</a></li>
+                                    <li><a href="#">נאמנויות ותכנון עזבונות</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">מדיה וחדשות</a></li>
+                            <li><a href="#">דרושים</a></li>
+                            <li><a href="#">מעורבות חברתית</a></li>
+                            <li><a href="#">צור קשר</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__search mob-only">
+                        <a href="#" class="header__search-btn">
+                            <img src="./img/search-icon.svg" alt="">
+                        </a>
+                        <input type="search" placeholder="מה תרצו לחפש?">
+
+
+                    </div>
+                    <button class="close-menu"></button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<button class="light-plugin desk-only">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.4881 15.5119L24 12L20.4881 8.48806V3.51194H15.5119L12 0L8.48806 3.51194H3.51194V8.48806L0 12L3.51194 15.5119V20.4881H8.48806L12 24L15.5119 20.4881H20.4881V15.5119ZM12 18.366V5.63395C15.5119 5.63395 18.366 8.48806 18.366 12C18.366 15.5119 15.5119 18.366 12 18.366Z"
+        />
+    </svg>
+
+</button>
+<main>
+    <section class="hero-block">
+        <div class="hero-bg">
+            <div class="container">
+                <div class="btn-go-down">
+                    <img src="./img/arr-down-or.svg" alt="">
+                    <p>גלול מטה</p>
+
+
+                </div>
+                <div class="hero-bg__block js-slider js-have-text">
+                    <div class="slider-block">
+                        <div class="single-slide active">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/hp-sld-1.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p>קשרי גומלין חזקים.</p>
+                                <p>חשיבה משפטית מתקדמת.</p>
+                                <p>צוות מאוחד.</p>
+                            </div>
+                            <div class="after">
+                                <img src="./img/g1189.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/hp-sld-2.jpg" alt="">
+                            </div>
+                            <div class="text text--gold">
+                                <p>הגנה על האינטרס הלקוח
+                                    שירות ברמה גבוהה תוך כדי</p>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/hp-sld-1.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p>קשרי גומלין חזקים.</p>
+                                <p>חשיבה משפטית מתקדמת.</p>
+                                <p>צוות מאוחד.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="slider-cont">
+                        <div class="slider-controls">
+
+                            <div class="slider-dots">
+                                <div class="slider-dot active"></div>
+                                <div class="slider-dot"></div>
+                                <div class="slider-dot "></div>
+                            </div>
+                            <div class="slider-play"></div>
+                        </div>
+
+                    </div>
+                    <div class="hero-btn">
+                        <a href="#" class="btn btn--line">ליצירת קשר</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <section class="js-slider-text text-under-slider">
+        <div class="container">
+            <div class="text-slides">
+                <div class="single-text-slide">
+                    <span>01.</span>
+                    <p>אנו במשרד עורכי הדין הנטר, פנחסי, זריהן, בן עזרא ושות' גאים בכך
+                        שאנו מספקים ללקוחותינו שירות ברמה הגבוהה ביותר, תוך שימת לב לכל
+                        פרט שותפים בכדי לענות על צורכיהם, בין אם הם חברה רב לאומית
+                        גדולה, קרן הון פרטי, לקוח פרטי או יזם.
+                    </p>
+                </div>
+                <div class="single-text-slide">
+                    <span>02.</span>
+                    <p>מאחורינו שנות ניסיון משפטי ומסחרי רב תחומי רבות,
+                        המאפשרות לנו לסייע ללקוחותינו למצוא פתרונות יצירתיים
+                        מותאמים אישית בכל תחום בחוק בו אנו מתבקשים לייעץ.
+                    </p>
+                </div>
+                <div class="single-text-slide">
+                    <span>03.</span>
+                    <p>
+                        משרדינו מאמין כי על מנת להמשיך להגשים את המטרות של לקוחותינו,
+                        להצליח ולהגיע להישגים חדשים, יש להחזיר חזרה לקהילה ולסייע לאחר
+                        לגלות את הפוטנציאל הטמון בו ולממש אותו. לכן, מקפיד המשרד לפעול
+                        למען החברה והקהילה ברמות השונות ובתחומי פעילות מגוונים.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="knowledge">
+        <div class="knowledge__top">
+
+            <div class="left">
+                <div class="container-left">
+                    <span>תחומי התמחות</span>
+                    <p>וסטיבולום סוליסי טידום בעליק. אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט
+                        דולור, קראס וואל אאוגו
+                        לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קונסקטורר אדיפיסינג. סת אגת לקטוס </p>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="container-right">
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="knowledge__bottom">
+            <div class="container">
+                <div class="knowledge-list">
+                    <div class="single-knowledge">
+                        <div class="icon">
+                            <img src="./img/s-i-1.svg" alt="">
+                        </div>
+                        <p>נדל״ן</p>
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ser-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-knowledge">
+                        <div class="icon">
+                            <img src="./img/s-i-2.svg" alt="">
+                        </div>
+                        <p>מימון פרויקטים</p>
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ser-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-knowledge">
+                        <div class="icon">
+                            <img src="./img/s-i-3.svg" alt="">
+                        </div>
+                        <p>משפט תאגידי</p>
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ser-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-knowledge">
+                        <div class="icon">
+                            <img src="./img/s-i-4.svg" alt="">
+                        </div>
+                        <p>התחדשות עירונית</p>
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ser-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-knowledge">
+                        <div class="icon">
+                            <img src="./img/s-i-5.svg" alt="">
+                        </div>
+                        <p>משפט מסחרי</p>
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ser-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="values">
+        <div class="container-sec">
+            <span>our added value</span>
+            <p>We bring our years of multisciplinary legal and commercial experience to help our clients find
+                commercially minded creative tailor made solutions in whataver area of the law we are asked to advise
+                on</p>
+        </div>
+
+    </section>
+
+    <section class="news">
+        <div class="news-container">
+                <div class="news-track">
+                    <div class="single-news">
+                        <div class="news-video">
+                            <div class="video-block">
+
+                            </div>
+
+                        </div>
+                        <div class="news-banner">
+
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+        <div class="news-asside">
+
+        </div>
+
+    </section>
+
+</main>
+<div class="bg-lines-cont">
+    <div class="container">
+        <div class="bg-lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="./js/common.js"></script>
+</body>
+
+</html>
