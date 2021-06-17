@@ -4,11 +4,16 @@ window.onscroll = function () {
 
 
 function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.body.querySelector(".header").classList.add('scroll');
+    if (document.body.querySelector(".header")) {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.body.querySelector(".header").classList.add('scroll');
+        } else {
+            document.body.querySelector(".header").classList.remove('scroll');
+        }
     } else {
-        document.body.querySelector(".header").classList.remove('scroll');
+
     }
+
 }
 
 // document.onload = () => {
@@ -279,7 +284,10 @@ function openBigMenu() {
         closeMenu.addEventListener('click', () => {
             headerMenu.classList.remove('open');
             document.body.classList.remove('no-scroll');
-
+            headerMenu.querySelector('.menu-list').classList.remove('mobile-only');
+            subMenuOpeners.forEach((btn2) => {
+                btn2.classList.remove('open');
+            })
         })
     }
 }
@@ -399,3 +407,38 @@ console.log(textSlides.offsetWidth);
 // bigSliderTimer = setInterval(dotsSliderBig, 2400);
 
 
+let newsTrackSlider = document.querySelector('.news-track');
+
+let newsTrackArrows = [...document.querySelectorAll('.news .swiper-arrow')];
+
+function createNewsSlider() {
+    if (!newsTrackSlider) {
+
+    } else {
+        let currentSlide = 0;
+        let nextSlide = 1;
+        let slidesLength = [...newsTrackSlider.querySelectorAll('.single-news')].length;
+        newsTrackArrows.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                if (btn.classList.contains('js-next')) {
+                     if ((currentSlide + 1) > (slidesLength - 1)) {
+                         nextSlide = 0;
+                     } else {
+                         nextSlide = currentSlide + 1;
+                     }
+                } else {
+                    if ((currentSlide - 1) < 0) {
+                        nextSlide = slidesLength - 1;
+                    } else {
+                        nextSlide = currentSlide - 1;
+                    }
+                }
+                newsTrackSlider.className = '';
+                newsTrackSlider.classList.add(`news-track`);
+                newsTrackSlider.classList.add(`news-track--${nextSlide}`);
+                currentSlide = nextSlide;
+            })
+        })
+    }
+}
+createNewsSlider();
