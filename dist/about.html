@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" media="all" href="./css/fonts.css">
+    <link rel="stylesheet" media="all" href="./css/main.min.css">
+    <link rel="stylesheet" media="all" href="./libs/slick.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__container">
+                <div class="header-logo">
+                    <a href="#" class="home-link" title="home-page">
+                        <img src="./img/logo-main-1.svg" alt="Home logo">
+                    </a>
+                    <a href="#" class="home-link home-link--scroll" title="home-page">
+                        <img src="./img/logo-main-2.svg" alt="Home logo">
+                    </a>
+                </div>
+                <div class="header-top__control">
+                    <div class="header__lang">
+                        <span>עב</span>
+                        <ul>
+                            <li><a href="#">עברית</a></li>
+                            <li><a href="#">english</a></li>
+                            <li><a href="#">français</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="header__search desk-only">
+                        <a href="#" class="header__search-btn">
+                            <img src="./img/search-icon.svg" alt="">
+                        </a>
+                        <input type="search" placeholder="מה תרצו לחפש?">
+
+
+                    </div>
+                    <button class="light-plugin mob-only">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.4881 15.5119L24 12L20.4881 8.48806V3.51194H15.5119L12 0L8.48806 3.51194H3.51194V8.48806L0 12L3.51194 15.5119V20.4881H8.48806L12 24L15.5119 20.4881H20.4881V15.5119ZM12 18.366V5.63395C15.5119 5.63395 18.366 8.48806 18.366 12C18.366 15.5119 15.5119 18.366 12 18.366Z"
+                            />
+                        </svg>
+
+                    </button>
+                    <button class="burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="header-menu__bg">
+            <img src="./img/bg-menu.png" alt="">
+            <div class="container">
+                <div class="bg-lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header-menu__container">
+            <div class="container">
+                <div class="header-menu__content">
+
+                    <div class="menu-list">
+                        <div class="menu-list__go-back-mob">
+                            <svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M-1.3552e-06 6.68421L6.31579 13L6.31579 8.26316L30 8.26316L30 5.10526L6.31579 5.10526L6.31579 0.368419L-1.3552e-06 6.68421Z"
+                                />
+                            </svg>חזרה
+                        </div>
+                        <ul>
+                            <li><a href="#">אודות</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="#">תחומי פעילות<svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M-1.3552e-06 6.68421L6.31579 13L6.31579 8.26316L30 8.26316L30 5.10526L6.31579 5.10526L6.31579 0.368419L-1.3552e-06 6.68421Z"
+                                    />
+                                </svg></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">נדל״ן</a></li>
+                                    <li><a href="#">מימון פרויקטים</a></li>
+                                    <li><a href="#">התחדשות עירונית</a></li>
+                                    <li><a href="#">משפט תאגידי</a></li>
+                                    <li><a href="#">משפט מסחרי</a></li>
+                                    <li><a href="#">ליטיגציה ויישוב סכסוכים</a></li>
+                                    <li><a href="#">פעילות בינלאומית</a></li>
+                                    <li><a href="#">נאמנויות ותכנון עזבונות</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">מדיה וחדשות</a></li>
+                            <li><a href="#">דרושים</a></li>
+                            <li><a href="#">מעורבות חברתית</a></li>
+                            <li><a href="#">צור קשר</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__search mob-only">
+                        <a href="#" class="header__search-btn">
+                            <img src="./img/search-icon.svg" alt="">
+                        </a>
+                        <input type="search" placeholder="מה תרצו לחפש?">
+
+
+                    </div>
+                    <button class="close-menu"></button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<button class="light-plugin desk-only">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.4881 15.5119L24 12L20.4881 8.48806V3.51194H15.5119L12 0L8.48806 3.51194H3.51194V8.48806L0 12L3.51194 15.5119V20.4881H8.48806L12 24L15.5119 20.4881H20.4881V15.5119ZM12 18.366V5.63395C15.5119 5.63395 18.366 8.48806 18.366 12C18.366 15.5119 15.5119 18.366 12 18.366Z"
+        />
+    </svg>
+
+</button>
+<main class="not-home-page">
+    <section class="hero-block">
+        <div class="hero-bg">
+            <div class="container">
+                <div class="btn-go-down">
+                    <img src="./img/arr-down-or.svg" alt="">
+                </div>
+                <div class="hero-bg__block big-img">
+                    <div class="slider-block">
+                        <div class="single-slide active">
+                            <div class="img">
+                                <img class="lazyload" data-src="./img/ab-img-1.jpg" alt="">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <section class="text-section">
+        <div class="container">
+            <div class="text-section__container">
+                <div class="hero-breadcrumbs">
+                    <ul class="breadcrumbs">
+                        <li><a href="#">עמוד הבית</a></li>
+                        <li><span>אודות</span></li>
+                    </ul>
+                </div>
+                <div class="section-text">
+                    <div class="title">
+                        <span>אודות</span>
+                    </div>
+                    <div class="text">
+                        <p>משרד עורכי הדין הנטר, פנחסי, זריהן, בן עזרא ושות' הוקם בשנת 2004 על ידי מיכאל הנטר.
+                            עו"ד הנטר, היה שותף במשרד עורכי דין מוביל בלונדון עד שנת 1980, אז החל לעסוק בעריכת דין
+                            בישראל. לעו"ד הנטר ניסיון של למעלה מ -45 שנים באנגליה ובישראל בתחומי הנאמנויות,
+                            עיזבונות, בתחום התאגידים והמשפט המסחרי. כיום, מובילים את המשרד השותפים, המומחים כל
+                            אחד בתחומו, ומקפידים, יחד עם כל עורכי הדין שבמשרד לספק שירות מקצועי, אפקטיבי ואדיב.
+                        </p>
+                        <p>
+                            משרד עורכי הדין הנטר, פנחסי, זריהן, בן עזרא ושות' חרט על דגלו עבודה מקצועית, נחושה,
+                            מסורה ולא מתפשרת, להשגת התוצאות האופטימליות עבור כל לקוח ולקוח, בכל היבט. בפן האישי
+                            כל לקוח ייהנה משירות אישי, ישיר ומסור, תוך שקיפות מלאה ומעשייה מקסימלית לצורך מתן
+                            מענה מלא לצרכיו המשפטיים.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="about-text">
+        <div class="container">
+            <div class="about-text__container">
+                <div class="about-text__single">
+                    <span>מומחיות.</span>
+                    <p>משרד עורכי הדין הנטר, פנחסי, זריהן, בן עזרא ושות' מתמחה בדיני חברות, מסחר ונדל"ן, דיני מיסים
+                        בינלאומיים, ובעבודה משפטית מול לקוחות פרטיים, החל מנאמנויות ועיזבונות וכלה בניהול הון
+                        משפחתי. בעוד שלקוחות מסוימים מבקשים ומקבלים שירותים מותאמים בתחומי התמחות ספציפיים,
+                        אחרים נהנים מהספקטרום המלא של שירותי המשרד, כולל התדיינות משפטית במידת הצורך.</p>
+                </div>
+                <div class="about-text__single">
+                    <span>לקוחות.</span>
+                    <p>משרד עורכי הדין הנטר, פנחסי, זריהן, בן עזרא ושות' מייצג לקוחות מכל רחבי העולם: מאוסטרליה
+                        ואירופה ועד ישראל, אפריקה ויבשת אמריקה. קהל הלקוחות של המשרד כולל תאגידים ישראליים ורב
+                        לאומיים גדולים, חברות נדל"ן, קרנות הון פרטיות, עסקים קטנים ובינוניים ולקוחות פרטיים. השירותים
+                        שלנו ניתנים במגוון שפות לרבות אנגלית, עברית וצרפתית בהתאם לצרכי הלקוחות שלנו.</p>
+                </div>
+                <div class="about-text__single">
+                    <span>חברות.</span>
+                    <p>משרד עורכי הדין הנטר, פנחסי, זריהן, בן עזרא ושות' חבר ב- ILG (קבוצת עורכי הדין הבינלאומית),
+                        ונציגיו הבלעדיים בישראל. חברות ב- ILG מספקת למשרד גישה למומחים בלמעלה מ- 35 תחומי שיפוט
+                        בינלאומיים מרכזיים אשר מספקים מענה ללקוחותינו בתחום השיפוט שלהם. השותפים שלנו חברים גם
+                        בחברה לאנשי אמון ועוסקי נחלה (STEP) ובאיגוד תכנון המס הבינלאומי (ITPA).</p>
+                </div>
+                <div class="about-text__single">
+                    <span>ערך מוסף.</span>
+                    <p>אנו, במשרד עורכי הדין הנטר, פנחסי, זריהן, בן עזרא ושות' גאים בכך שאנו מספקים ללקוחותינו שירות
+                        ברמה הגבוהה ביותר, תוך שימת לב לכל פרט שותפים בכדי לענות על צורכיהם, בין אם הם חברה רב
+                        לאומית גדולה, קרן הון פרטי, לקוח פרטי או יזם. מאחורינו שנות ניסיון משפטי ומסחרי רב תחומי רבות,
+                        המאפשרות לנו לסייע ללקוחותינו למצוא פתרונות יצירתיים מותאמים אישית בכל תחום בחוק בו אנו
+                        מתבקשים לייעץ.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="partners">
+        <div class="bg">
+            <img src="./img/r-partn.svg" alt="">
+        </div>
+        <div class="partners-container">
+            <div class="partners-aside">
+                <div class="text">
+                    <p>שותפים</p>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="partners-list">
+                    <a href="#" class="partners-single">
+                        <div class="img">
+                            <img src="./img/partn-1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>מיכאל הנטר</span>
+                            <ul>
+                                <li>נאמנויות ועיזבון</li>
+                                <li>תאגידים</li>
+                                <li>ירחסמ</li>
+                            </ul>
+
+                        </div>
+                    </a>
+                    <a href="#" class="partners-single">
+                        <div class="img">
+                            <img src="./img/partn-1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>מיכאל הנטר</span>
+                            <ul>
+                                <li>נאמנויות ועיזבון</li>
+                                <li>תאגידים</li>
+                                <li>ירחסמ</li>
+                            </ul>
+
+                        </div>
+                    </a>
+                    <a href="#" class="partners-single">
+                        <div class="img">
+                            <img src="./img/partn-1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>מיכאל הנטר</span>
+                            <ul>
+                                <li>נאמנויות ועיזבון</li>
+                                <li>תאגידים</li>
+                                <li>ירחסמ</li>
+                            </ul>
+
+                        </div>
+                    </a>
+                    <a href="#" class="partners-single">
+                        <div class="img">
+                            <img src="./img/partn-1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>מיכאל הנטר</span>
+                            <ul>
+                                <li>נאמנויות ועיזבון</li>
+                                <li>תאגידים</li>
+                                <li>ירחסמ</li>
+                            </ul>
+
+                        </div>
+                    </a>
+                    <a href="#" class="partners-single">
+                        <div class="img">
+                            <img src="./img/partn-1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>מיכאל הנטר</span>
+                            <ul>
+                                <li>נאמנויות ועיזבון</li>
+                                <li>תאגידים</li>
+                                <li>ירחסמ</li>
+                            </ul>
+
+                        </div>
+                    </a>
+                    <a href="#" class="partners-single">
+                        <div class="img">
+                            <img src="./img/partn-1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>מיכאל הנטר</span>
+                            <ul>
+                                <li>נאמנויות ועיזבון</li>
+                                <li>תאגידים</li>
+                                <li>ירחסמ</li>
+                            </ul>
+
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+
+</main>
+<div class="bg-lines-cont">
+    <div class="container">
+        <div class="bg-lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="mailing">
+    <div class="container">
+        <div class="mailing-container">
+            <p>לעדכונים וחדשות הרשמו כאן לניוזלטר שלנו </p>
+
+            <div class="mailing-form">
+                <label for="input-lb"></label>
+                <input type="text" name="input-lb" id="input-lb" placeholder="הקלידו כתובת מייל כאן">
+                <button class="btn btn--no">שליחה</button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="./img/logo-main-2.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-menu">
+                    <span>כללי</span>
+                    <ul>
+                        <li><a href="#">אודות</a></li>
+                        <li><a href="#">מדיה וחדשות</a></li>
+                        <li><a href="#">דרושים</a></li>
+                        <li><a href="#">צוות משרד</a></li>
+                        <li><a href="#">צור קשר</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <span>תחומי פעילות</span>
+                    <ul>
+                        <li><a href="#">נדל”ן</a></li>
+                        <li><a href="#">מימון פרוייקטים</a></li>
+                        <li><a href="#">התחדשות עירונית</a></li>
+                        <li><a href="#">משפט תאגידי</a></li>
+                        <li><a href="#">משפט מסחרי</a></li>
+                        <li><a href="#">ליטיגציה ויישוב סכסוכים</a></li>
+                        <li><a href="#">פעילות בינלאומית</a></li>
+                        <li><a href="#">נאמנויות ותכנון עזבונות</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <span>צרו איתנו קשר</span>
+                    <ul>
+                        <li class="footer-loc"><p><img src="./img/icon-log.svg" alt=""> שדרות רוטשילד 46, תל אביב (קומה 2)</p></li>
+                        <li class="footer-tel"><a href="#"><img src="./img/icon-tel.svg" alt="">03-5665665</a></li>
+                        <li class="footer-email"><a href="#"><img src="./img/icon-m.svg" alt="">reception@hunterlaw.co.il</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer-copy">
+                <p>כל הזכויות שמורות להנטר<img src="./img/copyr.svg" alt=""></p>
+                <div class="img"><img src="./img/dsble.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="./js/common.js"></script>
+</body>
+
+</html>

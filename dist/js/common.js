@@ -441,4 +441,61 @@ function createNewsSlider() {
         })
     }
 }
+
 createNewsSlider();
+
+
+let footerSpanMenu = [...document.querySelectorAll('.footer-menu > span')];
+
+function openFooterMenuMob() {
+    if (!footerSpanMenu.length) {
+
+    } else {
+        footerSpanMenu.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('open');
+            })
+        })
+    }
+}
+openFooterMenuMob();
+
+//create knowledge slider
+
+let knowTrackSlider = document.querySelector('.knowledge-list');
+
+let knowTrackArrows = [...document.querySelectorAll('.knowledge .swiper-arrow')];
+
+function createKnowSlider() {
+    if (!knowTrackSlider) {
+
+    } else {
+        let currentSlide = 0;
+        let nextSlide = 1;
+        let slidesLength = [...knowTrackSlider.querySelectorAll('.single-knowledge')].length;
+        knowTrackArrows.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                if (btn.classList.contains('js-next')) {
+                    if ((currentSlide + 1) > (slidesLength - 1)) {
+                        nextSlide = 0;
+                    } else {
+                        nextSlide = currentSlide + 1;
+                    }
+                } else {
+                    if ((currentSlide - 1) < 0) {
+                        nextSlide = slidesLength - 1;
+                    } else {
+                        nextSlide = currentSlide - 1;
+                    }
+                }
+                knowTrackSlider.className = '';
+                knowTrackSlider.classList.add(`knowledge-list`);
+                knowTrackSlider.classList.add(`knowledge-list--${nextSlide}`);
+                currentSlide = nextSlide;
+            })
+        })
+    }
+}
+
+createKnowSlider();
+
