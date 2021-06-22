@@ -401,7 +401,7 @@ createSlider();
 
 let textSlides = document.querySelector('.single-text-slide');
 
-console.log(textSlides.offsetWidth);
+// console.log(textSlides.offsetWidth);
 
 
 // bigSliderTimer = setInterval(dotsSliderBig, 2400);
@@ -498,4 +498,9 @@ function createKnowSlider() {
 }
 
 createKnowSlider();
+
+
+$(document).ready(function() {
+    $('.section-text__filter select').niceSelect();
+});
 
