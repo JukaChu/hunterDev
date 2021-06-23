@@ -1559,6 +1559,8 @@ main {
     height: 17.0833vw;
     margin-top: auto;
     position: relative;
+    overflow: hidden;
+
 
     &::before {
       position: absolute;
@@ -3604,6 +3606,10 @@ main {
   height: 29.3229vw;
   top: 8.9583vw;
   #{$end-direction}: 9.4792vw;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .map-dot {
@@ -3623,23 +3629,24 @@ main {
   }
 
   &--1 {
-    top: 12.2396vw;
-    #{$end-direction}: 21.3021vw;
+    //top: 12.2396vw;
+    top: 41.74%;
+    left: 46.742%;
   }
 
   &--2 {
-    top: 15.4688vw;
-    #{$end-direction}: 24.1667vw;
+    top: 52.753%;
+    left: 53.028%;
   }
 
   &--3 {
-    top: 15.8333vw;
-    #{$end-direction}: 25.5729vw;
+    top: 53.996%;
+    left: 55.657%;
   }
 
   &--4 {
-    top: 17.0313vw;
-    #{$end-direction}: 35.9896vw;
+    top: 58.081%;
+    left: 78.971%;
   }
 
   &.active {
@@ -4153,6 +4160,12 @@ main {
       width: 100%;
       height: 8.8542vw;
       margin-bottom: 0.8854vw;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
     }
     &:nth-child(even) {
@@ -4287,6 +4300,10 @@ main {
       color: #394053;
     }
   }
+}
+
+.fancybox-navigation .fancybox-button--arrow_left, .fancybox-navigation .fancybox-button--arrow_right, .fancybox-infobar, .fancybox-button.fancybox-button--play, .fancybox-button.fancybox-button--thumbs {
+  display: none !important;
 }
 
 //

@@ -588,3 +588,22 @@ function changeDotInfo() {
 
 changeDotInfo();
 
+let modPosition = document.querySelector('.modal-position');
+let modLinkPos = document.querySelector('.pos-soc-link');
+
+function openModPos() {
+    if (!modLinkPos) {
+
+    } else {
+        modLinkPos.addEventListener('click', (e) => {
+            e.preventDefault();
+            modPosition.classList.add('active');
+            document.body.classList.add('no-scroll');
+        })
+    }
+}
+openModPos();
+
+
+
+
