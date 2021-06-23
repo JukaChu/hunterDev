@@ -504,3 +504,87 @@ $(document).ready(function() {
     $('.section-text__filter select').niceSelect();
 });
 
+//modal windows
+
+let modalWindows = [...document.querySelectorAll('.modal-window')];
+let closeModals = [...document.querySelectorAll('.close-modal')];
+
+function modalFunction() {
+    if(!modalWindows.length){
+
+    } else {
+        modalWindows.forEach((mod) => {
+            mod.addEventListener('click', () => {
+                mod.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            })
+            let cont = mod.querySelector('.container');
+            cont.addEventListener('click', (e) => {
+                e.stopPropagation();
+            })
+
+
+        });
+        closeModals.forEach((cls) => {
+            cls.addEventListener('click', () => {
+                cls.closest('.modal-window').classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            })
+        })
+    }
+}
+
+modalFunction();
+
+let knowledgeItems = [...document.querySelectorAll('.single-knowledge')];
+
+function openSingleKnowledge() {
+    if (!knowledgeItems.length) {
+
+    } else {
+        let modalWindowKnowledge = document.querySelector('.modal-knowledge');
+        knowledgeItems.forEach((item, k) => {
+
+            item.addEventListener('click', () => {
+                let insertCont = modalWindowKnowledge.querySelector('.modal-insert');
+                let modalInfo = item.querySelector('.modal-info');
+
+                document.body.classList.add('no-scroll');
+                modalWindowKnowledge.classList.add('active');
+                insertCont.innerHTML = '';
+                insertCont.appendChild(modalInfo.cloneNode(true));
+
+            })
+
+        })
+    }
+}
+openSingleKnowledge();
+
+//map dots
+let dotsMap = [...document.querySelectorAll('.map-dot')];
+
+function changeDotInfo() {
+    if (!dotsMap.length) {
+
+    } else {
+        dotsMap.forEach((dot, k) => {
+            dot.addEventListener('click', () => {
+                if (dot.classList.contains('active')) {
+
+                } else {
+                    let activeDot = document.querySelector('.map-dots .map-dot.active');
+                    activeDot.classList.remove('active');
+                    let activeTab = document.querySelector('.contact-us__single-tab.active');
+                    activeTab.classList.remove('active');
+                    dot.classList.add('active');
+                    [...document.querySelectorAll('.contact-us__single-tab')][k].classList.add('active');
+
+                }
+            })
+        })
+    }
+}
+
+changeDotInfo();
+
