@@ -50,6 +50,15 @@
 }
 
 @media screen and (max-width: 992px) {
+
+  .footer-socials {
+    margin-top: 5.2083vw;
+    a {
+      width: 3.2552vw;
+      height: 3.2552vw;
+      margin-#{$end-direction}: 1.3021vw;
+    }
+  }
   //to mob
   .modal-position .close-modal {
     right: 24px;
@@ -1663,6 +1672,7 @@
     padding-bottom: 4.0000vw;
     box-sizing: border-box;
     padding-top: 19.7333vw;
+    margin-top: 0;
   }
   .home-hero__text {
     .text {
@@ -1737,7 +1747,8 @@
     &-4 {
       width: 26.4000vw;
       height: 33.6000vw;
-      bottom: 3.2000vw;
+      //bottom: 3.2000vw;
+      top: 141.0667vw;
       left: 2.6667vw;
     }
   }
@@ -1757,7 +1768,14 @@
 }
 
 @media screen and (max-width: 525px) {
-
+  .footer-socials {
+    margin-top: 5.3333vw;
+    a {
+      width: 6.6667vw;
+      height: 6.6667vw;
+      margin-#{$end-direction}: 2.6667vw;
+    }
+  }
   .modal-position .modal-container {
     height: 100%;
     max-width: 100%;
