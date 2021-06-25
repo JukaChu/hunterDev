@@ -50,9 +50,24 @@
 }
 
 @media screen and (max-width: 992px) {
+  .text-section--estate .section-text {
+    padding-#{$start-direction}:20px;
+    max-width: none;
+  }
+  .single-work .text ul li::after {
+    width: 4px;
+    height: 4px;
+  }
+  .single-work .text ul li {
+    color: #49728A;
+  }
+  .news-blocks .partners-single .text ul li {
+    font-size: 1.8229vw;
+  }
 
   .footer-socials {
     margin-top: 5.2083vw;
+
     a {
       width: 3.2552vw;
       height: 3.2552vw;
@@ -69,9 +84,11 @@
     max-width: calc(100% - 40px);
     margin-left: 20px;
     margin-right: 20px;
+
     .container {
       overflow-y: auto;
     }
+
     .modal-content {
       height: auto;
     }
@@ -100,9 +117,11 @@
     form {
       width: 43.0990vw;
       margin: 0 auto;
+
       .btn {
         height: 6.5104vw;
       }
+
       input, label.file-upload {
         height: 6.5104vw;
         margin-bottom: 1.3021vw;
@@ -466,6 +485,7 @@
   //to mob
   .text-section--little .section-text {
     max-width: none;
+    padding-bottom: 7.8125vw;
 
     .title {
       span {
@@ -633,7 +653,7 @@
     }
   }
 
-  .news-blocks {
+  .news-blocks, .text-section--media .news-blocks {
     margin-top: 60px;
   }
   .pagination-container {
@@ -767,7 +787,7 @@
           line-height: 2.9948vw;
           padding: 0 0;
           padding-#{$end-direction}: 10px;
-          margin-#{$end-direction}: 10px;
+          margin-#{$end-direction}: 0;
 
           &::after {
             width: 4px;
@@ -802,6 +822,10 @@
     span {
       font-size: 5.9896vw;
       margin-bottom: 3.9063vw;
+    }
+
+    br {
+      display: none;
     }
 
     p {
@@ -873,6 +897,7 @@
       .text {
         padding: 0;
         border: none;
+
       }
     }
 
@@ -900,6 +925,10 @@
 
     > .text {
       margin-bottom: 3.9063vw;
+
+      br {
+        display: none;
+      }
 
       p {
         font-size: 2.3438vw;
@@ -952,7 +981,7 @@
     }
   }
   main.not-home-page {
-    padding-top: 23.1771vw;
+    padding-top: 35.1771vw;
 
     .hero-block {
       height: 47.1354vw;
@@ -1137,11 +1166,31 @@
       }
     }
   }
+  .bg-lines-cont {
+    .container {
+      padding: 0;
+      max-width: 32.5521vw;
+
+    }
+  }
+  .bg-lines {
+    .line {
+      display: none;
+
+      &:nth-child(1), &:nth-child(2) {
+        display: block;
+      }
+    }
+  }
   .hero-bg__block.js-slider {
     max-width: 76.5333vw;
   }
   .container-left {
     padding-#{$start-direction}: 20px;
+
+    br {
+      display: none;
+    }
   }
   .hero-bg {
     .container {
@@ -1206,6 +1255,7 @@
       position: static;
       transform: none;
       font-size: 3.9063vw;
+      direction: ltr;
     }
   }
   .partners-aside {
@@ -1429,6 +1479,7 @@
   .header-logo {
     width: 33.3333vw;
     height: 13.3333vw;
+    margin-top: 0;
   }
   .light-plugin {
     width: 13.3333vw;
@@ -1662,6 +1713,13 @@
       }
     }
   }
+  .news.news--no-btn {
+    margin-bottom: 7.2917vw;
+  }
+  .news.news--no-btn .swiper-controls {
+    transform: translate(0, 115%);
+
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1768,8 +1826,29 @@
 }
 
 @media screen and (max-width: 525px) {
+  .news.news--no-btn {
+    margin-bottom: 14.9333vw;
+  }
+  .news.news--no-btn .swiper-controls {
+    transform: translate(0, 115%);
+
+  }
+  .text-section--little .section-text {
+    padding-bottom: 16.0000vw;
+  }
+  .news-blocks .partners-single .text ul li {
+    font-size: 3.7333vw;
+  }
+  .bg-lines-cont {
+    .container {
+      padding: 0;
+      max-width: 33.3333vw;
+
+    }
+  }
   .footer-socials {
     margin-top: 5.3333vw;
+
     a {
       width: 6.6667vw;
       height: 6.6667vw;
@@ -1783,6 +1862,7 @@
 
     .container {
     }
+
     .modal-content {
       height: auto;
     }
@@ -1811,12 +1891,14 @@
     form {
       width: 100%;
       margin: 0;
+
       .btn {
         height: 13.3333vw;
       }
+
       input, label.file-upload {
         height: 13.3333vw;
-        margin-bottom:2.6667vw;
+        margin-bottom: 2.6667vw;
         padding-#{$end-direction}: 6.1333vw;
         padding-#{$start-direction}: 6.1333vw;
         font-size: 4.2667vw;
@@ -2146,6 +2228,9 @@
       font-size: 4.8000vw;
     }
   }
+  .text-section--social .section-text .title span {
+    max-width: 70vw;
+  }
   .single-work {
     width: 82.6667vw;
     margin-bottom: 60px;
@@ -2164,8 +2249,8 @@
         li {
           font-size: 4.2667vw;
           line-height: 5.6000vw;
-          padding-#{$end-direction}: 8px;
-          margin-#{$end-direction}: 8px;
+          padding-#{$end-direction}: 15px;
+          margin-#{$end-direction}: 15px;
         }
       }
 
@@ -2188,7 +2273,7 @@
       margin-#{$end-direction}: 0;
     }
   }
-  .news-blocks {
+  .news-blocks, .text-section--media .news-blocks {
     margin-top: 45.3333vw;
   }
   .pagination-container {
@@ -2247,7 +2332,7 @@
       span {
         font-size: 5.8667vw;
         line-height: 7.7333vw;
-        margin-bottom: 5.8667vw;
+        margin-bottom: 4.4667vw;
         max-width: 69.3333vw;
       }
     }
@@ -2308,7 +2393,7 @@
       .partners-single {
         width: 40.8000vw;
         margin: 0;
-        margin-bottom: 60px;
+        margin-bottom: 14.3667vw;
 
 
         margin-#{$end-direction}: 0;
@@ -2327,7 +2412,7 @@
             li {
               padding: 0;
               padding-#{$end-direction}: 10px;
-              margin-#{$end-direction}: 10px;
+              margin-#{$end-direction}: 4px;
             }
           }
         }
@@ -2462,7 +2547,7 @@
     }
 
     .title {
-      margin-bottom: 5.0000vw;
+      margin-bottom: 6.8vw;
 
       span {
         font-size: 9.6000vw;
