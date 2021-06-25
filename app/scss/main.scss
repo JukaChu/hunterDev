@@ -510,6 +510,14 @@ main {
       padding-#{$start-direction}: 2.2396vw;
 
     }
+    &.header--contacts-us {
+      .header__lang span {
+        color: white;
+        &::before {
+          border-color: $white;
+        }
+      }
+    }
 
     .header-menu__content {
       padding: 2.1900vw 0 2.5000vw 0;
@@ -2517,6 +2525,7 @@ main {
     width: 2.7604vw;
     height: 0.7813vw;
     margin-#{$start-direction}: 0.3646vw;
+    margin-bottom: 4px;
 
     img {
       width: 100%;
