@@ -1547,15 +1547,22 @@
   .mob-only {
     display: flex;
   }
+  .header-menu__content {
+    &.mobile-only {
+      .menu-list__go-back-mob {
+        display: flex;
+      }
+    }
+  }
   .menu-list {
     position: relative;
     margin-top: 10.9333vw;
 
     &.mobile-only {
+
       .menu-list__go-back-mob {
         display: flex;
       }
-
       > ul {
 
         > li {
@@ -1682,7 +1689,7 @@
     display: none;
     align-items: center;
     position: absolute;
-    bottom: calc(100% + 9.0667vw);
+    bottom: 81%;
     #{$start-direction}: 0;
 
     color: #FD7615;
@@ -1826,6 +1833,9 @@
 }
 
 @media screen and (max-width: 525px) {
+  .menu-list__go-back-mob {
+    bottom: 87%;
+  }
   .news.news--no-btn {
     margin-bottom: 14.9333vw;
   }

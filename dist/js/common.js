@@ -253,12 +253,14 @@ function openSubMenuHeader() {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 btn.closest('.menu-list').classList.add('mobile-only');
+                btn.closest('.header-menu__content').classList.add('mobile-only');
                 btn.classList.toggle('open');
             })
         })
         subMobMenu.forEach((btn2) => {
             btn2.addEventListener('click', () => {
                 btn2.closest('.menu-list').classList.remove('mobile-only');
+                btn2.closest('.header-menu__content').classList.remove('mobile-only');
                 [...btn2.closest('.menu-list').querySelectorAll('.menu-item-has-children > a')].forEach((crk) => {
                     crk.classList.remove('open')
                 });
@@ -285,6 +287,7 @@ function openBigMenu() {
             headerMenu.classList.remove('open');
             document.body.classList.remove('no-scroll');
             headerMenu.querySelector('.menu-list').classList.remove('mobile-only');
+            headerMenu.querySelector('.header-menu__content').classList.remove('mobile-only');
             subMenuOpeners.forEach((btn2) => {
                 btn2.classList.remove('open');
             })
