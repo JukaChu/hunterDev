@@ -2943,6 +2943,10 @@ main {
       }
     }
   }
+
+  @media screen and (max-width: 992px){
+    padding-#{$start-direction}: 20px;
+  }
 }
 
 .about-text {
