@@ -4447,6 +4447,9 @@ main {
   display: none !important;
 }
 
+li.current:after{
+  display: none;
+}
 //
 //html[dir='rtl'] {
 //  .header__lang {

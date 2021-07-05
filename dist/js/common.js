@@ -607,6 +607,10 @@ function openModPos() {
 }
 openModPos();
 
+$(document).ready(function(){
+  $('span.current').parent().addClass('current')  
+})
+
 
 
 
