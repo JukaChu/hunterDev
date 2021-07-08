@@ -2943,6 +2943,10 @@ main {
       }
     }
   }
+
+  @media screen and (max-width: 992px){
+    padding-#{$start-direction}: 20px;
+  }
 }
 
 .about-text {
@@ -4443,6 +4447,9 @@ main {
   display: none !important;
 }
 
+li.current:after{
+  display: none;
+}
 //
 //html[dir='rtl'] {
 //  .header__lang {

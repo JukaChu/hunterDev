@@ -984,7 +984,7 @@
     padding-top: 35.1771vw;
 
     .hero-block {
-      height: 47.1354vw;
+      height: 67.1354vw;
 
       .container {
         padding: 0;
@@ -2592,6 +2592,10 @@
   }
   main.not-home-page {
     padding-top: 47.4667vw;
+
+    &.single-lawyer-page{
+      padding-top: 67.4667vw;
+    }
 
     .hero-block {
       height: 96.5333vw;
